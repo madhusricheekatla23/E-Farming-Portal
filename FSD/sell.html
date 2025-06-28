@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgroMart - Sell</title>
+  <link rel="stylesheet" href="css/sell.css">
+</head>
+<body>
+
+<header>
+  <h1>AgroMart</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="sell.html">Sell</a>
+    <a href="blog.html">Blog</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="sell-section">
+  <h2>Sell Your Products</h2>
+  <form id="sell-form">
+    <input type="text" id="product-name" placeholder="Product Name" required>
+    <input type="number" id="product-price" placeholder="Price (₹)" required>
+    <textarea id="product-description" placeholder="Product Description" required></textarea>
+    <input type="url" id="product-image" placeholder="Image URL" required>
+    <button type="submit">List Product</button>
+  </form>
+
+  <div id="product-list" class="product-list">
+    <h3>Products You Listed</h3>
+    <!-- Listed products will appear here -->
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 AgroMart. All Rights Reserved.</p>
+</footer>
+
+<script src="js/sell.js"></script>
+
+</body>
+</html>

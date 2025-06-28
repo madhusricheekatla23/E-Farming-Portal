@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgroMart - Login/Register</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<header>
+  <h1>AgroMart</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="sell.html">Sell</a>
+    <a href="blog.html">Blog</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="login-section">
+  <h2>Login or Register</h2>
+
+  <div class="form-container">
+    <!-- Login Form -->
+    <form id="login-form">
+      <h3>Login</h3>
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="javascript:void(0)" onclick="toggleForms()">Register here</a></p>
+    </form>
+
+    <!-- Register Form -->
+    <form id="register-form" style="display:none;">
+      <h3>Register</h3>
+      <input type="text" id="register-name" placeholder="Full Name" required>
+      <input type="email" id="register-email" placeholder="Email" required>
+      <input type="password" id="register-password" placeholder="Password" required>
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="javascript:void(0)" onclick="toggleForms()">Login here</a></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 AgroMart. All Rights Reserved.</p>
+</footer>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
